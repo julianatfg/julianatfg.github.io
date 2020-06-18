@@ -7,6 +7,4 @@
 
 This is a personal website (or, at least, trying to be).
 
-[Contact me?] (jufilhote@id.uff.br)
-
 ## 🧙🏻‍♀️👩🏻‍💻👩🏻‍🎤
