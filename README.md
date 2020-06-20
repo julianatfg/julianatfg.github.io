@@ -8,6 +8,4 @@
 
 This is a personal website (or, at least, trying to be).
 
-![Image of Mardigrastocat](https://octodex.github.com/images/mona-lovelace.jpg)
-
 ## 🧙🏻‍♀️👩🏻‍💻👩🏻‍🎤
