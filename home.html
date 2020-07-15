@@ -7,20 +7,24 @@
     <meta charset="utf-8" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://use.typekit.net/tcq8ypt.css">
     <link rel="shortcut icon" href="/icons/Dalek.ico" />
     <style type="text/css">
         body {
-            background: linear-gradient(90deg, #92D86C, #6C92D8, #D86C92);
-            margin: 0;
-            padding: 0;
-            font-family: "Roboto", sans-serif;
+            background: linear-gradient(45deg, #92D86C,#D86C92, #6C92D8);
+            font-family: "Montserrat", sans-serif;
             font-size: 16px;
-            color:#38488f;
+            color: #38488f;
         }
 
-        div {
-            width: 500px;
+        #box-container {
+            display: flex;
+            width: 800px;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        #content1 {
+            width: 50%;
             margin: 5em auto;
             padding: 20px;
             background-color: #fff;
@@ -28,41 +32,38 @@
             text-align: justify;
         }
 
-        #octocat {
-            position: relative;
-            bottom: 70px;
-            left: 250px;
-            width: 500px;
+        #content2 {
+            width: 50%;
             margin: 5em auto;
             padding: 20px;
             background-color: #fff;
             border-radius: 2em;
+            text-align: justify;
         }
 
         h1 {
-            font-family: "cooper-black-std", cursive;
-            font-size: 36px;
+            font-family: "Pacifico", serif;
+            font-size: 42px;
         }
 
         h2 {
-            font-family: "cooper-black-std";
+            font-family: "Pacifico", serif;
+            font-size: 36px;
         }
 
-        img {
-            position: relative;
-            bottom: 160px;
-            left: 55px;
-        }
-
+         
         a:link,
         a:visited {
             color: #38488f;
+            font-weight: 600;
             text-decoration: none;
         }
 
         a:hover {
             color: #E3008C;
         }
+
+        /* not using this either
 
         @media (max-width: 700px) {
             body {
@@ -75,28 +76,36 @@
                 border-radius: 0;
                 padding: 1em;
             }
+        ending the comment*/
     </style>
 </head>
 
 <body>
-    <div>
-        <h1>Hello world!</h1>
-        <p id="top">This page is established to be used for <strong>illustrative examples</strong> in documents. You may
-            use this
-            domain in examples without <em>prior coordination</em> or <ins>asking for permission</ins>.</p>
-        <p>I'm Jules, by the way. I enjoy reading, walking, languages and learning new techy things.</p>
-        <p>There is some <sup>superscript</sup> text for you.</p>
-        <p>Go <sub>boldly</sub> and <sup>beyond</sup>.</p>
-        <p>I'd much rather fight <mark>Daleks</mark> than <del>Cybermen</del>.</p>
-        <ol type="i">
-            <li>A Very English Scandal Ep. 1;</li>
-            <li>A Very English Scandal Ep. 2;</li>
-            <li>A Very English Scandal Ep. 3.</li>
-        </ol>
-        <p class="title"><a href="/starwars.html">*cue Star Wars music*</a></p>
-        <p><a href="http://julianatfg.github.io" target="_blank">More information...</a></p>
-        <p><a href="https://octodex.github.com/" target="_blank"><img
-                src="https://octodex.github.com/images/femalecodertocat.png" width="200" align="right"></a></p>
-    </div>   
+    <div id="box_container">
+        <div id="content1">
+            <h1>Hello world!</h1>
+            <p id="top">This page is established to be used for <strong>illustrative examples</strong> in documents. You
+                may
+                use this
+                domain in examples without <em>prior coordination</em> or <ins>asking for permission</ins>.</p>
+            <p>I'm Jules, by the way. I enjoy reading, walking, languages and learning new techy things.</p>
+            <p>There is some <sup>superscript</sup> text for you.</p>
+            <p>Go <sub>boldly</sub> and <sup>beyond</sup>.</p>
+            <p>I'd much rather fight <mark>Daleks</mark> than <del>Cybermen</del>.</p>
+            <ol type="i">
+                <li>A Very English Scandal Ep. 1;</li>
+                <li>A Very English Scandal Ep. 2;</li>
+                <li>A Very English Scandal Ep. 3.</li>
+            </ol>
+            <p class="title"><a href="/starwars.html">*cue Star Wars music*</a></p>
+            <p><a href="http://julianatfg.github.io" target="_blank">More information...</a></p>
+            <p><a href="https://octodex.github.com/" target="_blank"><img
+                        src="https://octodex.github.com/images/femalecodertocat.png" width="200" align="right"></a></p>
+        </div>
+
+        <div id="content2"><h2>hello, goodbye</h2>
+        <p>i don't understand why this is happening.</p></div>
+    </div>
 </body>
+
 </html>
