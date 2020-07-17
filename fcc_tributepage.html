@@ -1,0 +1,115 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,700;1,400&family=Fugaz+One&family=Lato:ital,wght@0,400;0,700;1,400&family=Montserrat:ital@0;1&family=Pacifico&family=Roboto:ital@0;1&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="/icons/marvin-front.png" />
+    <title>Tribute page for FCC: London</title>
+    <style>
+        body {
+            background-color: thistle;
+            font-family: "Roboto", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 12px;
+            text-align: justify;
+        }
+
+        h1 {
+            font-family: "Fugaz One", serif;
+        }
+
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Bitter", serif;
+        }
+
+        #title {
+            font-weight: 800;
+            text-shadow: #aaa 4px 4px 4px;
+        }
+
+        .d1 {
+            background: #fff;
+            grid-area: header1;
+            text-align: center;
+        }
+
+        .d2 {
+            background: #fff;
+            grid-area: header2;
+        }
+
+        .d3 {
+            background: #fff;
+            padding: 20px;
+            grid-area: content;
+        }
+
+        .d4 {
+            background: #fff;
+            grid-area: menu;
+        }
+
+        .d5 {
+            background: #fff;
+            grid-area: footer;
+        }
+
+        #main {
+            font-size: 40px;
+            width: 100%;
+            height: auto;
+            background: thistle;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: repeat(2, 1fr);
+            column-gap: 20px;
+            row-gap: 20px;
+            grid-template-areas:
+                "header1 header1"
+                "header2 header2"
+                "content menu"
+                "footer footer";
+        }
+
+        @media (max-width:600px) {
+            #main {
+                grid-template-areas:
+                    "header1 header1"
+                    "header2 header2"
+                    "menu menu"
+                    "content content"
+                    "footer footer";
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div id="main">
+        <div class="d1">
+            <h1 id="title">London</h1>
+        </div>
+        <div class="d2"><h2>this is column 2 (2nd header)</h2></div>
+        <div class="d3">this is column 3 (main content)
+            <br>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+        <div class="d4">this is column 4 (menu)</div>
+        <div class="d5">this is column 5 (footer)</div>
+    </div>
+
+</body>
+
+</html>

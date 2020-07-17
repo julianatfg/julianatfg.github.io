@@ -1,0 +1,91 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Bitter:wght@700&family=Inter:wght@400;900&family=Modak&family=Roboto+Slab:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="/icons/Dalek.ico" />
+    <title>freecodecampin' #2</title>
+    <style>
+        body {
+            background-color: thistle;
+            font-family: "Bitter", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 17px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .d1 {
+            background: LightSkyBlue;
+            grid-area: header1;
+        }
+
+        .d2 {
+            background: LightSalmon;
+            grid-area: header2;
+        }
+
+        .d3 {
+            background: PaleTurquoise;
+            grid-area: content;
+        }
+
+        .d4 {
+            background: LightPink;
+            grid-area: menu;
+        }
+
+        .d5 {
+            background: PaleGreen;
+            grid-area: footer;
+        }
+
+        .container {
+            font-size: 40px;
+            width: 100%;
+            height: auto;
+            background: LightGray;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: repeat(2, 1fr);
+            column-gap: 20px;
+            row-gap: 20px;
+            grid-template-areas:
+                "header1 header1"
+                "header2 header2"
+                "content menu"
+                "footer footer";
+        }
+
+        @media (max-width:600px){
+            .container {
+                grid-template-areas:
+                "header1 header1"
+                "header2 header2"
+                "menu menu"
+                "content content"
+                "footer footer";
+            }
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="d1">hello is it you're looking for (header)</div>
+        <div class="d2">this is column 2 (2nd header)</div>
+        <div class="d3">this is column 3 (main content)
+            <br>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+        <div class="d4">this is column 4 (menu)</div>
+        <div class="d5">this is column 5 (footer)</div>
+    </div>
+
+</body>
+
+</html>
