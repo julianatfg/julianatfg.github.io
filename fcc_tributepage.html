@@ -12,13 +12,12 @@
         body {
             background-color: thistle;
             font-family: "Roboto", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            font-size: 15px;
+            font-size: 12px;
             text-align: justify;
         }
 
         h1 {
-            font-family: "Pacifico", serif;
-            font-weight: 800;
+            font-family: "Fugaz One", serif;
         }
 
         h2,
@@ -29,9 +28,15 @@
             font-family: "Bitter", serif;
         }
 
+        #title {
+            font-weight: 800;
+            text-shadow: #aaa 4px 4px 4px;
+        }
+
         .d1 {
             background: #fff;
             grid-area: header1;
+            text-align: center;
         }
 
         .d2 {
@@ -55,7 +60,7 @@
             grid-area: footer;
         }
 
-        .container {
+        #main {
             font-size: 40px;
             width: 100%;
             height: auto;
@@ -73,7 +78,7 @@
         }
 
         @media (max-width:600px) {
-            .container {
+            #main {
                 grid-template-areas:
                     "header1 header1"
                     "header2 header2"
@@ -87,11 +92,11 @@
 
 <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <div class="container">
+    <div id="main">
         <div class="d1">
-            <h1>London</h1>
+            <h1 id="title">London</h1>
         </div>
-        <div class="d2">this is column 2 (2nd header)</div>
+        <div class="d2"><h2>this is column 2 (2nd header)</h2></div>
         <div class="d3">this is column 3 (main content)
             <br>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
