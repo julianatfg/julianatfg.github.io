@@ -1,0 +1,29 @@
+{
+  "name": "julianatfg",
+  "version": "1.0.0",
+  "description": "**Sub-London Thoughts**",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^4.14.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julianatfg/julianatfg.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julianatfg/julianatfg.github.io/issues"
+  },
+  "homepage": "https://github.com/julianatfg/julianatfg.github.io#readme"
+}
