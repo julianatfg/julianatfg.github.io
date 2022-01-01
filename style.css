@@ -103,6 +103,18 @@ body {
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
 
+#ytspfy {
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 2em;
+}
+
 
 /*-------------------------animations-----------------------*/
 @keyframes transitionAnimation {
